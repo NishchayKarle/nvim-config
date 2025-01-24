@@ -14,17 +14,19 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	-- require("plugins.colorscheme"),
+	require("plugins.lsp"),
+	require("plugins.telescope"),
 	require("plugins.neotree"),
 	require("plugins.bufferline"),
 	require("plugins.lualine"),
 	require("plugins.treesitter"),
-	require("plugins.lsp"),
 	require("plugins.autocompletion"),
 	require("plugins.format"),
 	require("plugins.gitsigns"),
-	require("plugins.telescope"),
+	require("plugins.alpha"),
+	require("plugins.indentline"),
+	require("plugins.misc"),
 })
 
 vim.cmd("colorscheme vim")
-vim.cmd([[highlight SignColumn guibg=vim]])
 vim.cmd([[highlight SignColumn guibg=vim]])

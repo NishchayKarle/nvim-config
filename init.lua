@@ -24,10 +24,12 @@ require("lazy").setup({
 	require("plugins.format"),
 	require("plugins.gitsigns"),
 	require("plugins.alpha"),
-	require("plugins.indentline"),
+	-- require("plugins.indentline"),
 	require("plugins.misc"),
 	require("plugins.copilot"),
 })
 
 vim.cmd("colorscheme vim")
 vim.cmd([[highlight SignColumn guibg=vim]])
+vim.cmd([[highlight EndOfBuffer guifg=#808080 guibg=NONE]])
+
